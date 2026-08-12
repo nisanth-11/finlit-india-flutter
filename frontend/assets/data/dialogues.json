@@ -1,0 +1,983 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Where Does My Money Go?",
+      "messages": [
+        {
+          "id": 1,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Hey Priya! You look worried today. What's going on?"
+        },
+        {
+          "id": 2,
+          "type": "choice",
+          "options": [
+            { "text": "I have no money left and it's only the 20th!", "branch": "branch_a" },
+            { "text": "Just tired, nothing serious", "branch": "branch_b" }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Oh no! That happens to me too sometimes. Do you know where it all went?",
+          "branch": "branch_a"
+        },
+        {
+          "id": 4,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Are you sure? You've been quiet all day... Is it money problems again?",
+          "branch": "branch_b"
+        },
+        {
+          "id": 5,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Do you actually track what you spend?",
+          "branch": "merge"
+        },
+        {
+          "id": 6,
+          "type": "choice",
+          "options": [
+            { "text": "No, I just buy what we need", "branch": "branch_c" },
+            { "text": "I try to remember but always forget", "branch": "branch_d" }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That's exactly the problem! If you don't write it down, it just disappears.",
+          "branch": "branch_c"
+        },
+        {
+          "id": 8,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Remembering doesn't work — trust me, I tried that for years.",
+          "branch": "branch_d"
+        },
+        {
+          "id": 9,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Here, I saw this the other day and it really stuck with me...",
+          "branch": "merge"
+        },
+        {
+          "id": 10,
+          "type": "fact_card",
+          "text": "Most families don't know where 30% of their money goes each month. Writing it down changes everything."
+        },
+        {
+          "id": 11,
+          "type": "message",
+          "character": "Sunita",
+          "text": "So let's try together right now. How much did Raj bring home this month?"
+        },
+        {
+          "id": 12,
+          "type": "choice",
+          "options": [
+            { "text": "Around 8,000 Rs", "branch": "branch_e" },
+            { "text": "I'm not sure exactly...", "branch": "branch_f" }
+          ]
+        },
+        {
+          "id": 13,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Perfect! That's your income. Now let's see where it went.",
+          "branch": "branch_e"
+        },
+        {
+          "id": 14,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That's okay — even a rough number is a good start. Let's say around 8,000.",
+          "branch": "branch_f"
+        },
+        {
+          "id": 15,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Now think — rent, food, transport... Add it all up. What did you spend?",
+          "branch": "merge"
+        },
+        {
+          "id": 16,
+          "type": "choice",
+          "options": [
+            { "text": "About 5,500 Rs I think", "branch": "branch_g" },
+            { "text": "I really don't know...", "branch": "branch_h" }
+          ]
+        },
+        {
+          "id": 17,
+          "type": "message",
+          "character": "Sunita",
+          "text": "So you still have 2,500 Rs left! See — you do know your money.",
+          "branch": "branch_g"
+        },
+        {
+          "id": 18,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Let's estimate. Rent 2,000, food 3,000, transport 500 — that's already 5,500. So you have 2,500 left!",
+          "branch": "branch_h"
+        },
+        {
+          "id": 19,
+          "type": "fact_card",
+          "text": "Income − Expenses = What's left. 8,000 − 5,500 = 2,500 Rs. This number is called your balance."
+        },
+        {
+          "id": 20,
+          "type": "message",
+          "character": "Sunita",
+          "text": "You just did your first expense check! That wasn't so hard, was it?"
+        },
+        {
+          "id": 21,
+          "type": "choice",
+          "options": [
+            { "text": "I can't believe I never did this before!", "branch": "branch_i" },
+            { "text": "It feels overwhelming though...", "branch": "branch_j" }
+          ]
+        },
+        {
+          "id": 22,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Now imagine doing this every month. Everything becomes clearer!",
+          "branch": "branch_i"
+        },
+        {
+          "id": 23,
+          "type": "message",
+          "character": "Sunita",
+          "text": "I know that feeling. But the first time is always the hardest. It gets easier, I promise.",
+          "branch": "branch_j"
+        },
+        {
+          "id": 24,
+          "type": "message",
+          "character": "Meena",
+          "text": "Priya, I heard you girls talking. Can I share something?",
+          "branch": "merge"
+        },
+        {
+          "id": 25,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Of course, Meena!"
+        },
+        {
+          "id": 26,
+          "type": "message",
+          "character": "Meena",
+          "text": "For years I had no idea where our money went. One day I just started writing everything down in a notebook. Within one month — I found 800 Rs we were wasting without even knowing."
+        },
+        {
+          "id": 27,
+          "type": "fact_card",
+          "text": "The first step to controlling your money is simply knowing where it goes. You cannot change what you don't measure."
+        },
+        {
+          "id": 28,
+          "type": "message",
+          "character": "Meena",
+          "text": "Start today. Even a small notebook works. Your future self will thank you."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Income and Expenses",
+      "messages": [
+        {
+          "id": 1,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Priya! Raj got his salary today, right? How are you feeling about this month?"
+        },
+        {
+          "id": 2,
+          "type": "choice",
+          "options": [
+            { "text": "Hopeful! I want to track everything this time", "branch": "branch_a" },
+            { "text": "Nervous... we always seem to run short", "branch": "branch_b" }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "message",
+          "character": "Sunita",
+          "text": "I love that attitude! Let's do this properly together.",
+          "branch": "branch_a"
+        },
+        {
+          "id": 4,
+          "type": "message",
+          "character": "Sunita",
+          "text": "I understand. But that's exactly why we're doing this — no more surprises at the end of the month.",
+          "branch": "branch_b"
+        },
+        {
+          "id": 5,
+          "type": "message",
+          "character": "Sunita",
+          "text": "First question — do you know exactly how much Raj earned this month?",
+          "branch": "merge"
+        },
+        {
+          "id": 6,
+          "type": "choice",
+          "options": [
+            { "text": "Yes — 10,000 Rs", "branch": "branch_c" },
+            { "text": "He mentioned a number but I forgot...", "branch": "branch_d" }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Great! Write that down. That's your income.",
+          "branch": "branch_c"
+        },
+        {
+          "id": 8,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Go ask him tonight — you need to know this number. It's the foundation of everything.",
+          "branch": "branch_d"
+        },
+        {
+          "id": 9,
+          "type": "fact_card",
+          "text": "Income = all the money that comes INTO your household each month. Salary, extra work, any other source. Know this number first — always.",
+          "branch": "merge"
+        },
+        {
+          "id": 10,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Now the other side — what did the family spend this month?"
+        },
+        {
+          "id": 11,
+          "type": "choice",
+          "options": [
+            { "text": "Rent 2,000, food 3,000, transport 500... maybe 2,000 more on other things", "branch": "branch_e" },
+            { "text": "I didn't track it properly this time", "branch": "branch_f" }
+          ]
+        },
+        {
+          "id": 12,
+          "type": "message",
+          "character": "Sunita",
+          "text": "So that's 7,500 Rs total. Let's see what's left!",
+          "branch": "branch_e"
+        },
+        {
+          "id": 13,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Let's estimate together. Rent? Food? Transport? Even rough numbers tell us a lot.",
+          "branch": "branch_f"
+        },
+        {
+          "id": 14,
+          "type": "fact_card",
+          "text": "Expenses = all the money that goes OUT of your household each month. Big ones: rent, food, school fees, medicine. Small ones add up too — chai, auto, snacks.",
+          "branch": "merge"
+        },
+        {
+          "id": 15,
+          "type": "message",
+          "character": "Sunita",
+          "text": "So — 10,000 in, 7,500 out. What does that leave?"
+        },
+        {
+          "id": 16,
+          "type": "choice",
+          "options": [
+            { "text": "2,500 Rs!", "branch": "branch_g" },
+            { "text": "I'm not sure, I'm bad at maths...", "branch": "branch_h" }
+          ]
+        },
+        {
+          "id": 17,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Exactly! That's your balance. That's what you have left to work with.",
+          "branch": "branch_g"
+        },
+        {
+          "id": 18,
+          "type": "message",
+          "character": "Sunita",
+          "text": "10,000 minus 7,500 equals 2,500. That's your balance — what's left after all expenses.",
+          "branch": "branch_h"
+        },
+        {
+          "id": 19,
+          "type": "fact_card",
+          "text": "Income − Expenses = Balance. 10,000 − 7,500 = 2,500 Rs. If balance is POSITIVE → you're okay. If balance is NEGATIVE → you're spending more than you earn. This leads to debt.",
+          "branch": "merge"
+        },
+        {
+          "id": 20,
+          "type": "choice",
+          "options": [
+            { "text": "2,500 is not bad actually!", "branch": "branch_i" },
+            { "text": "What if the balance is negative though?", "branch": "branch_j" }
+          ]
+        },
+        {
+          "id": 21,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Right! And now you can decide what to do with those 2,500 Rs instead of just watching them disappear.",
+          "branch": "branch_i"
+        },
+        {
+          "id": 22,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Great question. That's when you need to look at your expenses and find what can be reduced. We'll talk about that soon.",
+          "branch": "branch_j"
+        },
+        {
+          "id": 23,
+          "type": "message",
+          "character": "Meena",
+          "text": "Girls, may I say something?",
+          "branch": "merge"
+        },
+        {
+          "id": 24,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Please, Meena!"
+        },
+        {
+          "id": 25,
+          "type": "message",
+          "character": "Meena",
+          "text": "When my husband and I first wrote down our income and expenses — we discovered we were spending 1,200 Rs a month on things we couldn't even remember buying."
+        },
+        {
+          "id": 26,
+          "type": "choice",
+          "options": [
+            { "text": "1,200 Rs! That's so much...", "branch": "branch_k" },
+            { "text": "How did you even find that out?", "branch": "branch_l" }
+          ]
+        },
+        {
+          "id": 27,
+          "type": "message",
+          "character": "Meena",
+          "text": "Exactly. Small purchases every day add up to a big number by the end of the month.",
+          "branch": "branch_k"
+        },
+        {
+          "id": 28,
+          "type": "message",
+          "character": "Meena",
+          "text": "We just wrote everything down for one month. Every single purchase. The number shocked us both.",
+          "branch": "branch_l"
+        },
+        {
+          "id": 29,
+          "type": "fact_card",
+          "text": "One simple habit: At the end of each day, write down everything you spent. After one month, you will see your true spending picture clearly.",
+          "branch": "merge"
+        },
+        {
+          "id": 30,
+          "type": "message",
+          "character": "Meena",
+          "text": "Knowing your numbers is not about being perfect. It's about being aware. Awareness is where change begins."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "What is a Budget?",
+      "messages": [
+        {
+          "id": 1,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Priya, you've been tracking your expenses for a few weeks now. How does it feel?"
+        },
+        {
+          "id": 2,
+          "type": "choice",
+          "options": [
+            { "text": "So much better! I finally know where my money goes", "branch": "branch_a" },
+            { "text": "It's helpful but I still feel like I'm not in control", "branch": "branch_b" }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That's exactly how it should feel! Now I want to show you the next step.",
+          "branch": "branch_a"
+        },
+        {
+          "id": 4,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Tracking is just the first step. What I'm about to show you will give you real control.",
+          "branch": "branch_b"
+        },
+        {
+          "id": 5,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Have you ever heard of a budget?",
+          "branch": "merge"
+        },
+        {
+          "id": 6,
+          "type": "choice",
+          "options": [
+            { "text": "Isn't that something only rich people do?", "branch": "branch_c" },
+            { "text": "I've heard the word but don't really know what it means", "branch": "branch_d" }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That's what I thought too! But actually it's the opposite — it's how ordinary people stop feeling poor.",
+          "branch": "branch_c"
+        },
+        {
+          "id": 8,
+          "type": "message",
+          "character": "Sunita",
+          "text": "It's simpler than it sounds, I promise. Let me explain.",
+          "branch": "branch_d"
+        },
+        {
+          "id": 9,
+          "type": "message",
+          "character": "Sunita",
+          "text": "A budget means you DECIDE in advance where each rupee will go — before the month even starts.",
+          "branch": "merge"
+        },
+        {
+          "id": 10,
+          "type": "fact_card",
+          "text": "A budget is a plan for your money. Instead of wondering where it went — you tell it where to go. You are in control, not your money."
+        },
+        {
+          "id": 11,
+          "type": "choice",
+          "options": [
+            { "text": "So I plan everything at the start of the month?", "branch": "branch_e" },
+            { "text": "But what if something unexpected happens?", "branch": "branch_f" }
+          ]
+        },
+        {
+          "id": 12,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Exactly! You sit down, look at your income, and decide: this much for food, this much for rent, this much to save.",
+          "branch": "branch_e"
+        },
+        {
+          "id": 13,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Such a good question! That's why a budget always includes a small amount for surprises. We never know everything that will happen.",
+          "branch": "branch_f"
+        },
+        {
+          "id": 14,
+          "type": "message",
+          "character": "Sunita",
+          "text": "I used to feel guilty every time I spent money. Like I was doing something wrong.",
+          "branch": "merge"
+        },
+        {
+          "id": 15,
+          "type": "choice",
+          "options": [
+            { "text": "Yes! I feel that way all the time", "branch": "branch_g" },
+            { "text": "Really? But you always seem so confident", "branch": "branch_h" }
+          ]
+        },
+        {
+          "id": 16,
+          "type": "message",
+          "character": "Sunita",
+          "text": "A budget changed that for me. When you planned to spend it — there's no guilt. It's allowed.",
+          "branch": "branch_g"
+        },
+        {
+          "id": 17,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Ha! It took me a long time to get here. A budget gave me that confidence.",
+          "branch": "branch_h"
+        },
+        {
+          "id": 18,
+          "type": "fact_card",
+          "text": "A budget is not a restriction. It's permission to spend — without guilt. When you planned it, you earned the right to spend it.",
+          "branch": "merge"
+        },
+        {
+          "id": 19,
+          "type": "message",
+          "character": "Meena",
+          "text": "Priya, I want to tell you something that happened in our home."
+        },
+        {
+          "id": 20,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Please tell us, Meena!"
+        },
+        {
+          "id": 21,
+          "type": "message",
+          "character": "Meena",
+          "text": "Twenty years ago, my husband and I fought about money every single week. We never had enough, always blamed each other."
+        },
+        {
+          "id": 22,
+          "type": "choice",
+          "options": [
+            { "text": "That sounds so stressful...", "branch": "branch_i" },
+            { "text": "Raj and I argue about money too sometimes", "branch": "branch_j" }
+          ]
+        },
+        {
+          "id": 23,
+          "type": "message",
+          "character": "Meena",
+          "text": "It was. Until one day a neighbour showed us how to make a simple plan together. Our first budget.",
+          "branch": "branch_i"
+        },
+        {
+          "id": 24,
+          "type": "message",
+          "character": "Meena",
+          "text": "Most couples do, dear. Money is the number one cause of family arguments. But a budget changes that.",
+          "branch": "branch_j"
+        },
+        {
+          "id": 25,
+          "type": "message",
+          "character": "Meena",
+          "text": "When you both agree on the plan before the month starts — there is nothing to argue about. The plan decides, not the emotions.",
+          "branch": "merge"
+        },
+        {
+          "id": 26,
+          "type": "fact_card",
+          "text": "Families with a budget argue about money significantly less than those without one. A shared plan creates shared understanding."
+        },
+        {
+          "id": 27,
+          "type": "message",
+          "character": "Sunita",
+          "text": "So Priya — are you ready to make your very first budget?"
+        },
+        {
+          "id": 28,
+          "type": "choice",
+          "options": [
+            { "text": "Yes! I actually feel excited about this", "branch": "branch_k" },
+            { "text": "A little nervous, but yes — let's do it", "branch": "branch_l" }
+          ]
+        },
+        {
+          "id": 29,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Let's go! Your budget is waiting.",
+          "branch": "branch_k"
+        },
+        {
+          "id": 30,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That nervousness means you care. And that's enough to start.",
+          "branch": "branch_l"
+        },
+        {
+          "id": 31,
+          "type": "fact_card",
+          "text": "You just unlocked your Budget tab! Enter your monthly income and start planning where your money goes. Your first budget starts now.",
+          "branch": "merge",
+          "unlock": "budget_tab"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Needs vs Wants",
+      "messages": [
+        {
+          "id": 1,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Priya! You look stressed again. What happened?"
+        },
+        {
+          "id": 2,
+          "type": "choice",
+          "options": [
+            { "text": "I have no money left but I don't know why...", "branch": "branch_a" },
+            { "text": "I spent too much this month but I'm not sure where", "branch": "branch_b" }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That is exactly what happened to me last year. Let me show you something important.",
+          "branch": "branch_a"
+        },
+        {
+          "id": 4,
+          "type": "message",
+          "character": "Sunita",
+          "text": "I know that feeling. Money just seems to disappear, right? Let me help you understand why.",
+          "branch": "branch_b"
+        },
+        {
+          "id": 5,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Tell me — what did you buy this month?",
+          "branch": "merge"
+        },
+        {
+          "id": 6,
+          "type": "choice",
+          "options": [
+            { "text": "Food, rent, school fees... and some new clothes", "branch": "branch_c" },
+            { "text": "Medicines, electricity bill... and some snacks and things for the house", "branch": "branch_d" }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Good. Now — which of those could you NOT skip?",
+          "branch": "branch_c"
+        },
+        {
+          "id": 8,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Okay. Now think — which of those were absolutely necessary?",
+          "branch": "branch_d"
+        },
+        {
+          "id": 9,
+          "type": "message",
+          "character": "Sunita",
+          "text": "There are two types of expenses, Priya. Things you NEED and things you WANT.",
+          "branch": "merge"
+        },
+        {
+          "id": 10,
+          "type": "fact_card",
+          "text": "NEEDS — Must pay every month: Food and ration, Rent or house payment, Children's school fees, Medicines and health costs, Electricity and water bill, SHG savings contribution. WANTS — Extra spending: Extra snacks or sweets, New clothes outside festivals, Entertainment, Gifts beyond budget.",
+          "branch": "merge"
+        },
+        {
+          "id": 11,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Your needs must always come first. Always. No matter what."
+        },
+        {
+          "id": 12,
+          "type": "choice",
+          "options": [
+            { "text": "But sometimes I buy wants without thinking...", "branch": "branch_e" },
+            { "text": "I always pay rent and food first, but the rest gets mixed up", "branch": "branch_f" }
+          ]
+        },
+        {
+          "id": 13,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That is normal! We all do it. The trick is to know the difference BEFORE you spend.",
+          "branch": "branch_e"
+        },
+        {
+          "id": 14,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That is a good start! But we need to make sure ALL needs are paid before any wants.",
+          "branch": "branch_f"
+        },
+        {
+          "id": 15,
+          "type": "fact_card",
+          "text": "Radha earns ₹7,000 this month. School fees and ration → NEED ✓. New saree → WANT. Extra sweets → WANT. Mobile recharge → WANT. Needs always come before wants. Radha pays school fees and ration FIRST.",
+          "branch": "merge"
+        },
+        {
+          "id": 16,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Think about last month. What did you buy that was a want — not a need?"
+        },
+        {
+          "id": 17,
+          "type": "choice",
+          "options": [
+            { "text": "I bought new bangles... but we needed medicine money too", "branch": "branch_g" },
+            { "text": "I bought extra snacks for the children... but rent was still due", "branch": "branch_h" }
+          ]
+        },
+        {
+          "id": 18,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Exactly. If you had listed your needs first, you would have seen there was not enough left for bangles.",
+          "branch": "branch_g"
+        },
+        {
+          "id": 19,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Yes! The snacks felt small. But small wants add up and steal from your needs.",
+          "branch": "branch_h"
+        },
+        {
+          "id": 20,
+          "type": "message",
+          "character": "Meena",
+          "text": "Girls, can I share something?",
+          "branch": "merge"
+        },
+        {
+          "id": 21,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Please, Meena!"
+        },
+        {
+          "id": 22,
+          "type": "message",
+          "character": "Meena",
+          "text": "When my children were young, I bought sweets and small things without thinking. By the 20th — no money for school fees."
+        },
+        {
+          "id": 23,
+          "type": "choice",
+          "options": [
+            { "text": "That is exactly my situation, Meena!", "branch": "branch_i" },
+            { "text": "How did you fix it?", "branch": "branch_j" }
+          ]
+        },
+        {
+          "id": 24,
+          "type": "message",
+          "character": "Meena",
+          "text": "Then this lesson is exactly what you need, dear. You are not alone.",
+          "branch": "branch_i"
+        },
+        {
+          "id": 25,
+          "type": "message",
+          "character": "Meena",
+          "text": "I started writing my needs first, before I went to the market. Everything changed after that.",
+          "branch": "branch_j"
+        },
+        {
+          "id": 26,
+          "type": "fact_card",
+          "text": "The rule is simple: Write down ALL your needs first. Pay them ALL before buying any wants. What is left — that is your wants money.",
+          "branch": "merge"
+        },
+        {
+          "id": 27,
+          "type": "message",
+          "character": "Meena",
+          "text": "Give your needs a name before your money leaves your hand. That is the only way."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "The First List",
+      "messages": [
+        {
+          "id": 1,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Priya! It is the 1st of the month. Did Raj bring home the money?"
+        },
+        {
+          "id": 2,
+          "type": "choice",
+          "options": [
+            { "text": "Yes! He brought ₹8,000 this month", "branch": "branch_a" },
+            { "text": "Only ₹6,000 this month — less work available", "branch": "branch_b" }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Good month! Before you go to the market — sit with me for 10 minutes.",
+          "branch": "branch_a"
+        },
+        {
+          "id": 4,
+          "type": "message",
+          "character": "Sunita",
+          "text": "A harder month. That is okay. We will work with what we have. Sit with me first.",
+          "branch": "branch_b"
+        },
+        {
+          "id": 5,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Before you spend a single rupee — tell me. What MUST you pay this month, no matter what?",
+          "branch": "merge"
+        },
+        {
+          "id": 6,
+          "type": "choice",
+          "options": [
+            { "text": "Rent, school fees, ration, electricity... and my SHG amount", "branch": "branch_c" },
+            { "text": "I'm not sure... rent and food I think?", "branch": "branch_d" }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Perfect! You already know your list. Now write it down — before anything else.",
+          "branch": "branch_c"
+        },
+        {
+          "id": 8,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Let us think together. Rent? School fees? Food? Medicine? SHG savings? Write each one down.",
+          "branch": "branch_d"
+        },
+        {
+          "id": 9,
+          "type": "message",
+          "character": "Sunita",
+          "text": "That list — those are your needs. That is your First List.",
+          "branch": "merge"
+        },
+        {
+          "id": 10,
+          "type": "fact_card",
+          "text": "The First List is your money's to-do list. Write it on the 1st of every month — before chai, before market, before anything. Give every rupee a job before it leaves your hand.",
+          "branch": "merge"
+        },
+        {
+          "id": 11,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Once you know what must go — you can see exactly what is left for everything else."
+        },
+        {
+          "id": 12,
+          "type": "choice",
+          "options": [
+            { "text": "So I write needs first and only then think about wants?", "branch": "branch_e" },
+            { "text": "What if there is not enough even for needs?", "branch": "branch_f" }
+          ]
+        },
+        {
+          "id": 13,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Exactly! Needs first, always. What remains — that is your wants money. Not before.",
+          "branch": "branch_e"
+        },
+        {
+          "id": 14,
+          "type": "message",
+          "character": "Sunita",
+          "text": "In a hard month — focus only on the most critical needs. Food, medicines, school fees. Everything else waits.",
+          "branch": "branch_f"
+        },
+        {
+          "id": 15,
+          "type": "fact_card",
+          "text": "In a good month: pay all needs, save a little extra for your emergency jar. In a low month: food, medicines, school fees come first — everything else waits. Always save something — even ₹50 counts.",
+          "branch": "merge"
+        },
+        {
+          "id": 16,
+          "type": "message",
+          "character": "Meena",
+          "text": "Priya, I want to tell you something."
+        },
+        {
+          "id": 17,
+          "type": "message",
+          "character": "Sunita",
+          "text": "Tell us, Meena!"
+        },
+        {
+          "id": 18,
+          "type": "message",
+          "character": "Meena",
+          "text": "For years I could not understand where our money went. Then I started writing the First List on the 1st morning itself. Before chai. Before market. It changed everything."
+        },
+        {
+          "id": 19,
+          "type": "choice",
+          "options": [
+            { "text": "Just writing it down made a difference?", "branch": "branch_g" },
+            { "text": "I want to try this from tomorrow!", "branch": "branch_h" }
+          ]
+        },
+        {
+          "id": 20,
+          "type": "message",
+          "character": "Meena",
+          "text": "Yes! When you write it, you see it clearly. You cannot pretend the rent does not exist when it is written in front of you.",
+          "branch": "branch_g"
+        },
+        {
+          "id": 21,
+          "type": "message",
+          "character": "Meena",
+          "text": "Not tomorrow — today! It is the 1st. Write your First List right now, in the app.",
+          "branch": "branch_h"
+        },
+        {
+          "id": 22,
+          "type": "fact_card",
+          "text": "Your money does not disappear. It goes to places you did not plan. A First List gives every rupee a name before it leaves your hand.",
+          "branch": "merge"
+        },
+        {
+          "id": 23,
+          "type": "message",
+          "character": "Meena",
+          "text": "Start today. Even on paper. Even in your mind. The First List is the beginning of control."
+        }
+      ]
+    }
+  ]
+}

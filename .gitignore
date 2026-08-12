@@ -1,0 +1,28 @@
+# Ignore project-level documentation as per user request
+README.md
+frontend/README.md
+
+# Ignore sensitive Firebase service account key
+backend/serviceAccountKey.json
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.local
+
+# Ignore planning artifacts
+task.md
+implementation_plan.md
+walkthrough.md
+
+# Ignore sensitive Firebase service account key in frontend root
+frontend/serviceAccountKey.json
+
+# Ignore editor settings
+.vscode/
+.gstack/
+
+# Python
+__pycache__/
+*.pyc
