@@ -1,0 +1,42 @@
+name: Build and release Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
+      - ".github/workflows/build-apk.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: flutter pub get
+
+      - name: Build release APK
+        working-directory: frontend
+        run: flutter build apk --release
+
+      - name: Rename APK
+        run: cp frontend/build/app/outputs/flutter-apk/app-release.apk finlit-india.apk
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest build
+          body: Automatically built from the latest commit on main.
+          make_latest: true
+          files: finlit-india.apk
